@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  user-select: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.125rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background-image: linear-gradient(45deg, #354869,#1a2239);
+color: #555b6a;
+}
+img,
+picture,
+video {
+  block-size: auto;
+  width: 250px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+p {
+  overflow-wrap: break-word;
+  font-size: 1.125rem;
+  color: aliceblue;
+  width: 41%;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+.bar-left {
+  display: flex;
+    height: 100%;
+    width: 64px;
+    color: aliceblue;
+    background-image: linear-gradient(45deg, #0f1b33, #334260,#0f1b33);
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid;
+    z-index: 2;
+}
+.bar-left span {
+  display: flex;
+    gap: 2rem;
+    font-size: xx-large;
+    flex-direction: column;
+    margin: 1rem auto;
+    align-items: center;
+    width: 100%;
+
+}
+.landing .face-landing {
+  background-image:url(../assets/1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-size: 100% 50vh;
+  padding-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.content {
+  min-height: 100vh;
+}
+ .landing {
+    margin-left: 65px;
+
+}
+h2 {
+  color: aqua;
+  font-size: xx-large;
+}
+.mov-card {
+  width: 250px;
+}
+.mov-details {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.most-pop {
+  padding-left: 2rem;
+  overflow-x: hidden;
+}
+.filter-title {
+  color: #00ffff;
+  font-size: 3rem;
+  font-family: cursive;
+  padding: 1rem;
+}
+.photo {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.st-year {
+  display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+section {
+  background: radial-gradient(#192640f5, #0b0c0e);
+  background-attachment: fixed;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+section:before,
+section:after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin: 0 0 0 -400px;
+  position: absolute;
+  width: 800px;
+}
+
+section:before {
+  background: #444;
+  background: linear-gradient(left, #151515, #444, #151515);
+  top: 154px;
+}
+
+section:after {
+  background: #000;
+  background: linear-gradient(left, #151515, #000, #151515);
+  top: 155px;
+}
+
+section .form {
+  background: #111;
+  background: linear-gradient(#19182b, #000000);
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px #272727;
+  display: inline-block;
+  font-size: 0px;
+  margin: 110px auto 0;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+section input {
+  background: #222;
+  background: linear-gradient(#333, #222);
+  border: 1px solid #444;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 2px 0 #000;
+  color: #888;
+  display: block;
+  float: left;
+  font-family: "Cabin";
+  font-size: 1rem;
+  font-weight: 400;
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  text-shadow: 0 -1px 0 #000;
+  width: 300px;
+}
+
+section input:focus {
+  animation: glow 800ms ease-out infinite alternate;
+  background: #222922;
+  background: linear-gradient(#333933, #222922);
+  border-color: #553399;
+  box-shadow: 0 0 5px rgba(72, 0, 255, 0.2), inset 0 0 5px rgba(0, 255, 0, 0.1),
+    0 2px 0 #000;
+  color: #efe;
+  outline: none;
+}
+
+section button {
+  background: #222;
+  background: linear-gradient(#333, #222);
+  box-sizing: border-box;
+  border: 1px solid #444;
+  border-left-color: #000;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 0 #000;
+  color: #fff;
+  display: block;
+  float: left;
+  font-family: "Cabin", helvetica, arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-shadow: 0 -1px 0 #000;
+  width: 80px;
+}
+
+section button:hover,
+section button:focus {
+  background: #292929;
+  background: linear-gradient(#393939, #292929);
+  color: #469eff;
+  outline: none;
+}
+
+section button:active {
+  background: #292929;
+  background: linear-gradient(#393939, #292929);
+  box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+  top: 1px;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgb(58, 51, 153);
+    box-shadow: 0 0 5px rgba(0, 4, 255, 0.2),
+      inset 0 0 5px rgba(43, 0, 255, 0.1), 0 2px 0 #000;
+  }
+  100% {
+    border-color: rgb(54, 14, 255);
+    box-shadow: 0 0 20px rgba(4, 0, 255, 0.6),
+      inset 0 0 10px rgba(4, 0, 255, 0.4), 0 2px 0 #000;
+  }
+}
+.content-search {
+  margin-top: 20vh;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 64px;
+  padding-bottom: 19vh;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+.fa-solid.fa-star:not(:last-child) {
+  color: #ffc900;
+}
+.hide {
+  display: none;
+}
+.movies {
+  position: absolute;
+  top: 10px;
+  left: 2rem;
+  font-size: x-large;
+  color: #00ffa2;
+  z-index: 3;
+
+} 
+.del {
+  width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 3rem;
+    top: 3rem;
+    cursor: pointer;
+    color: aquamarine;
+}
+.active {
+  color: #6484d1;
+  filter: drop-shadow(-2px 3px 1px #1157ff);
+}
+.content-search p,.photo p{
+  width: fit-content;
+  white-space: nowrap;
+}
